@@ -2,17 +2,17 @@ project:
   type: website
 
 website:
-  title: "yo"
+  title: "FdR"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/fderyckel
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/Read_The_Dung
 format:
   html:
-    theme: cosmo
+    theme: journal
     css: styles.css
 
 editor: visual

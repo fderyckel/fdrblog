@@ -7,7 +7,7 @@ categories: [decision_tree, code, analysis]
 
 # Introduction 
 
-The idea of this document is to show how Xgboost can be especially bad at extrapolating or make prediction out of range of given data.   This idea of this post come from [this blog](https://www.sarem-seitz.com/forecasting-with-decision-trees-and-random-forests/)
+The idea of this document is to show how decision trees and its affiliate like random-forest and Xgboost can be especially bad at extrapolating or make prediction out of range of given data.   The idea of this post come from [this blog](https://www.sarem-seitz.com/forecasting-with-decision-trees-and-random-forests/)
 
 # Extrapolate linear trends 
 
