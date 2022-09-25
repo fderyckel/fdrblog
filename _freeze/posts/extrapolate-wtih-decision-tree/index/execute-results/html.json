@@ -1,0 +1,16 @@
+{
+  "hash": "2c8e3dfc9c60ed842fe8bc8741f6a1d1",
+  "result": {
+    "markdown": "---\ntitle: \"Extrapolate with Decision Trees\"\nauthor: \"Francois de Ryckel\"\ndate: \"2022-09-25\"\ncategories: [decision_tree, code, analysis]\n---\n\n\n# Introduction \n\nThe idea of this document is to show how Xgboost can be especially bad at extrapolating or make prediction out of range of given data.   This idea of this post come from [this blog](https://www.sarem-seitz.com/forecasting-with-decision-trees-and-random-forests/)\n\n# Extrapolate linear trends \n\n\n## Using R \n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tibble)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(parsnip)\n\nset.seed(123)\ndf <- tibble(t = seq(1:100), \n             y = t + 2 * rnorm(100, mean = 0, sd = 1))\n\n#The first 50 observation to be used for training and the last 50 for testing.\ndf_train <- df[1:50, ]\ndf_test <- df[51:100, ]\n\nmodel = decision_tree(mode = \"regression\", engine = \"rpart\", tree_depth = 2) \nmodel_fit = model %>% fit(y ~ t, data = df_train)\nmodel_fit\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nparsnip model object\n\nn= 50 \n\nnode), split, n, deviance, yval\n      * denotes terminal node\n\n1) root 50 10523.98000 25.568810  \n  2) t< 26.5 26  1260.25700 13.306160  \n    4) t< 10.5 10    88.19884  5.649251 *\n    5) t>=10.5 16   219.34920 18.091720 *\n  3) t>=26.5 24  1118.54600 38.853340  \n    6) t< 41.5 15   255.91590 34.484340 *\n    7) t>=41.5 9    99.10379 46.135010 *\n```\n:::\n\n```{.r .cell-code}\ny_predict <- add_row(predict(model_fit, df_train),  predict(model_fit, df_test) )\n\ndf <- df |> add_column( y_predict)\ntail(df)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n# A tibble: 6 × 3\n      t     y .pred\n  <int> <dbl> <dbl>\n1    95  97.7  46.1\n2    96  94.8  46.1\n3    97 101.   46.1\n4    98 101.   46.1\n5    99  98.5  46.1\n6   100  97.9  46.1\n```\n:::\n\n```{.r .cell-code}\nggplot() + \n  geom_line(aes(x = t, y = y, color = \"a\"), data = df[1:50, ], show.legend = TRUE) + \n  geom_line(aes(x = t, y = y, color=\"a\"), lty=2, data = df[50:100, ]) + \n  geom_line(aes(x=t, y = .pred, color = \"b\"), data = df[1:50, ]) + \n  geom_line(aes(x = t, y = .pred, color = \"c\"), lty=2, data = df[50:100, ]) + \n  scale_color_manual(name = \"Legend\", \n                     values = c(\"a\" = \"blue\", \"b\" = \"red\", \"c\" = \"purple\"), \n                     labels = c(\"Data\", \"In sample testing\", \"Out of sample testing\")) + \n  theme(legend.position = \"bottom\")\n```\n\n::: {.cell-output-display}\n![Performance of decision tree on a linear trend](index_files/figure-html/fig-r-lineartrend-1.png){#fig-r-lineartrend width=960}\n:::\n:::\n\n\n\n# Extrapolate using seasonal trend \n\nWe could use a seasonal pattern and get the same results.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n(1 + 0.06/2)^10\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 1.343916\n```\n:::\n:::\n\n\nThe `echo: false` option disables the printing of code (only output is displayed).\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
