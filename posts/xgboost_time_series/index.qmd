@@ -1,0 +1,37 @@
+---
+title: "Xgboost with Time-Series"
+author: "Harlow Malloc"
+date: "2022-10-01"
+categories: [xgboost, code, analysis, tidymodel]
+editor: source
+---
+
+Xgboost is part of the ensemble machine learning algorithms.  It can be used for both regression and classification.  There are few issues in using xgboost with time-series.  This article is taking a Xgboost post in python and also translating with the new R tidymodel framework.  
+
+```{r}
+#| message: false
+#| warning: false
+
+the_path <- here::here()
+library(glue)
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r warning=FALSE, message=FALSE}
+df0 <- read_csv(glue(the_path, "/raw_data/AEP_hourly.csv"))
+```
+
+
+
+```{python}
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df0 = pd.read_csv("../../raw_data/AEP_hourly.csv", index_col = [0], parse_dates = [0])
+
+plt.plot(df0)
+```
+

@@ -1,0 +1,9 @@
+---
+title: "Gini Coefficient of Impurity"
+author: "Francois de Ryckel"
+date: "2022-09-29"
+categories: [Decision Tree, code, analysis]
+---
+
+This article is to review one of the main way trees are being build.  When deciding which node to split next, the **Gini Coefficient of Impurity**  is being used.  
+
