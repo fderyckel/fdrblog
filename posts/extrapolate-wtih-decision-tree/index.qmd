@@ -5,16 +5,15 @@ date: "2022-09-25"
 categories: [decision_tree, code, analysis]
 ---
 
-# Introduction 
+# Introduction
 
-The idea of this document is to show how decision trees and its affiliate like random-forest and Xgboost can be especially bad at extrapolating or make prediction out of range of given data.   The idea of this post come from [this blog](https://www.sarem-seitz.com/forecasting-with-decision-trees-and-random-forests/)
+The idea of this document is to show how decision trees and its affiliate like random-forest and Xgboost can be especially bad at extrapolating or make prediction out of range of given data. The idea of this post come from [this blog](https://www.sarem-seitz.com/forecasting-with-decision-trees-and-random-forests/)
 
-# Extrapolate linear trends 
+# Extrapolate linear trends
 
+## Using R
 
-## Using R 
-
-```{r} 
+```{r}
 #| message: false
 #| warning: false
 #| fig-width: 10
@@ -55,8 +54,7 @@ ggplot() +
   theme(legend.position = "bottom")
 ```
 
-
-# Extrapolate using seasonal trend 
+# Extrapolate using seasonal trend
 
 We could use a seasonal pattern and get the same results.
 
