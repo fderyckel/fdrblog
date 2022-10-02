@@ -1,26 +1,58 @@
 ---
-title: "Xgboost with Time-Series"
-author: "Harlow Malloc"
+title: "Translating Python Part 1 - Xgboost with Time-Series"
+author: "Francois de Ryckel"
 date: "2022-10-01"
 categories: [xgboost, code, analysis, tidymodel]
 editor: source
 ---
 
+This post is about using xgboost on a time-series using both R with the tidymodel framework and python.  It is part of a series of articles aiming at translating python timeseries blog articles into their tidymodels equivalent. 
+
+The raw data is quite simple as it is energy consumption based on an hourly consumption. Original article can be found [here](https://www.kaggle.com/code/robikscube/tutorial-time-series-forecasting-with-xgboost/notebook).  Mimimal changes were made to better fit current python practices.  
+
 Xgboost is part of the ensemble machine learning algorithms.  It can be used for both regression and classification.  There are few issues in using xgboost with time-series.  This article is taking a Xgboost post in python and also translating with the new R tidymodel framework.  
+
+# loading data and features engineering 
 
 ```{r}
 #| message: false
 #| warning: false
 
+# setting up main R libraries to start 
 the_path <- here::here()
 library(glue)
 library(readr)
 library(dplyr)
 library(ggplot2)
+
+df0 <- read_csv(glue(the_path, "/raw_data/AEP_hourly.csv"))
+
+# let's have a quick look at what we are dealing with
+glimpse(df0)
+
+# and graphically - 
+# just using a couple of years to get an idea 
+ggplot(df0 |> filter(Datetime > "2014-01-01" & Datetime < "2016-01-01"), aes(x =Datetime, y=AEP_MW )) + geom_line(color = "light blue")
 ```
 
-```{r warning=FALSE, message=FALSE}
-df0 <- read_csv(glue(the_path, "/raw_data/AEP_hourly.csv"))
+As Datetime is our only input variables, we'll use the usual tricks of breaking it down into week number, months, etc. I am doing it slightly differently than in the python version here as I will first create the new time related variables then I will split it into training and testing. 
+
+```{r} 
+#| message: false
+#| warning: false
+
+library(lubridate)
+df <- df0 |> 
+  mutate(hour = hour(Datetime), 
+         day_of_week = wday(Datetime), 
+         day_of_year = yday(Datetime), 
+         day_of_month = mday(Datetime), 
+         week_of_year = isoweek(Datetime), 
+         month = month(Datetime), 
+         quarter = quarter(Datetime), 
+         year = isoyear(Datetime)
+         ) 
+glimpse(df)
 ```
 
 
@@ -30,8 +62,131 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df0 = pd.read_csv("../../raw_data/AEP_hourly.csv", index_col = [0], parse_dates = [0])
+py_df = pd.read_csv("../../raw_data/AEP_hourly.csv", index_col = [0], parse_dates = [0])
+py_df.tail()
+#plt.plot(df0)
 
-plt.plot(df0)
+split_date = '01-jan-2016'
+py_df_train = py_df.loc[py_df.index <= split_date].copy()
+py_df_test = py_df.loc[py_df.index > split_date].copy()
+```
+
+The author of the python blog first created a train / test set then created a function to add the variables then applied that function to both sets.  This is a very valid way of doing things when steps include normalizing and/or scaling data before applying our ML algorithms as we don't want any leakage from our training set into our testing set. 
+
+```{python}
+# Create features of df
+def create_features(df, label = None): 
+  df['date'] = df.index 
+  df['hour'] = df['date'].dt.hour
+  df['day_of_week'] = df['date'].dt.dayofweek
+  df['day_of_year'] = df['date'].dt.dayofyear 
+  df['day_of_month'] = df['date'].dt.day 
+  df['week_of_year'] = df['date'].dt.isocalendar().week 
+  df['month'] = df['date'].dt.month 
+  df['quarter'] = df['date'].dt.quarter 
+  df['year'] = df['date'].dt.year
+  
+  X = df[['hour', 'day_of_week', 'day_of_year', 'day_of_month', 'week_of_year', 'month', 'quarter', 'year']]
+  
+  if label: 
+    y = df[label]
+    return X, y
+  
+  return X
+```
+
+Compare this way of constructing variables to the much easier and more elegant tidyverse's way of cleaning and creating variables. 
+The **dplyr** [package](https://dplyr.tidyverse.org/) really makes it easy to wrangle data.  
+
+# Spliting in trainign an testing set 
+
+### Using R 
+
+```{r}
+library(rsample)
+
+prop_split = 1 - (nrow(df |> filter(Datetime > "2016-01-01")) / nrow(df))
+df_split <- initial_time_split(df |> arrange(Datetime), prop = prop_split)
+
+df_train <- training(df_split)
+df_test <- testing(df_split)
+
+```
+
+
+
+### Using Python
+
+```{python}
+py_x_train, py_y_train = create_features(py_df_train, label = "AEP_MW")
+py_x_test, py_y_test =   create_features(py_df_test, label = "AEP_MW")
+
+#When running xgboost, I got an issue with one of the type of the variable.  
+# Let's fix this. 
+py_x_train.info()
+
+py_x_train = py_x_train.astype(np.int64)
+py_x_test = py_x_test.astype(np.int64)
+
+py_x_train.info()
+```
+
+# Modeling 
+
+## Using R 
+
+```{r}
+library(recipes)
+library(parsnip)
+library(workflows)
+
+xgboost_rec <- recipe(AEP_MW ~ ., data = df_train) |>
+  update_role(Datetime, new_role = "ID")
+
+model_xgboost <- boost_tree(stop_iter = 50L) |> 
+  set_engine("xgboost") |>
+  set_mode("regression")
+  
+fit_xgboost <- model_xgboost |> fit(AEP_MW ~., data = df_train %>% select(-Datetime))
+
+fit_xgboost
+```
+
+
+```{python}
+from xgboost.sklearn import XGBRegressor
+py_xgboost_mod = XGBRegressor(n_estimator = 1000, early_stopping_rounds = 50)
+
+py_xgboost_mod.fit(py_x_train, py_y_train, 
+                   eval_set = [(py_x_train, py_y_train), (py_x_test, py_y_test)], 
+                   verbose = True)
+```
+
+
+# features importance 
+
+```{python}
+from xgboost import plot_importance, plot_tree
+_ = plot_importance(py_xgboost_mod, height=0.9)
+```
+
+
+# Checkng predictions 
+
+```{r}
+library(tibble)  # for the add_column
+df_test1 <- add_column(df_test,  predict(fit_xgboost, new_data = df_test)) 
+
+ggplot(df_test1, aes(x= Datetime, y = AEP_MW)) + 
+  geom_line(color = "blue") + 
+  geom_line(aes(y = .pred), color = "yellow", alpha = 0.5)
+```
+We can already see that we are not really modeling well the peaks and throgh.  
+We could get slightly more granular and try to see wha's goiing on. 
+
+```{r}
+ggplot(df_test1 %>% filter(Datetime > "2016-01-01" & Datetime < "2016-03-31"), aes(x= Datetime, y = AEP_MW)) + 
+  geom_line(color = "blue") + 
+  geom_line(aes(y = .pred), color = "yellow", alpha = 0.5)
 ```
 

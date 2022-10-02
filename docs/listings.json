@@ -1,0 +1,12 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/xgboost_time_series/index.html",
+      "/posts/gini_coefficient/index.html",
+      "/posts/extrapolate-wtih-decision-tree/index.html",
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html"
+    ]
+  }
+]
