@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/kmeans/index.html",
       "/posts/xgboost_time_series/index.html",
       "/posts/gini_coefficient/index.html",
       "/posts/extrapolate-wtih-decision-tree/index.html",
