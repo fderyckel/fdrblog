@@ -2,245 +2,245 @@
   {
     "objectID": "my_env/lib/python3.10/site-packages/pyzmq-24.0.1.dist-info/AUTHORS.html",
     "href": "my_env/lib/python3.10/site-packages/pyzmq-24.0.1.dist-info/AUTHORS.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This project was started and continues to be led by Brian E. Granger (ellisonbg AT gmail DOT com). Min Ragan-Kelley (benjaminrk AT gmail DOT com) is the primary developer of pyzmq at this time.\nThe following people have contributed to the project:\n\nAlexander Else (alexander DOT else AT team DOT telstra DOT com)\nAlexander Pyhalov (apyhalov AT gmail DOT com)\nAlexandr Emelin (frvzmb AT gmail DOT com)\nAmr Ali (amr AT ledgerx DOT com)\nAndre Caron (andre DOT l DOT caron AT gmail DOT com)\nAndrea Crotti (andrea DOT crotti DOT 0 AT gmail DOT com)\nAndrew Gwozdziewycz (git AT apgwoz DOT com)\nBaptiste Lepilleur (baptiste DOT lepilleur AT gmail DOT com)\nBrandyn A. White (bwhite AT dappervision DOT com)\nBrian E. Granger (ellisonbg AT gmail DOT com)\nBrian Hoffman (hoffman_brian AT bah DOT com)\nCarlos A. Rocha (carlos DOT rocha AT gmail DOT com)\nChris Laws (clawsicus AT gmail DOT com)\nChristian Wyglendowski (christian AT bu DOT mp)\nChristoph Gohlke (cgohlke AT uci DOT edu)\nCurtis (curtis AT tinbrain DOT net)\nCyril Holweck (cyril DOT holweck AT free DOT fr)\nDan Colish (dcolish AT gmail DOT com)\nDaniel Lundin (dln AT eintr DOT org)\nDaniel Truemper (truemped AT googlemail DOT com)\nDouglas Creager (douglas DOT creager AT redjack DOT com)\nEduardo Stalinho (eduardooc DOT 86 AT gmail DOT com)\nEren Güven (erenguven0 AT gmail DOT com)\nErick Tryzelaar (erick DOT tryzelaar AT gmail DOT com)\nErik Tollerud (erik DOT tollerud AT gmail DOT com)\nFELD Boris (lothiraldan AT gmail DOT com)\nFantix King (fantix DOT king AT gmail DOT com)\nFelipe Cruz (felipecruz AT loogica DOT net)\nFernando Perez (Fernando DOT Perez AT berkeley DOT edu)\nFrank Wiles (frank AT revsys DOT com)\nFélix-Antoine Fortin (felix DOT antoine DOT fortin AT gmail DOT com)\nGavrie Philipson (gavriep AT il DOT ibm DOT com)\nGodefroid Chapelle (gotcha AT bubblenet DOT be)\nGreg Banks (gbanks AT mybasis DOT com)\nGreg Ward (greg AT gerg DOT ca)\nGuido Goldstein (github AT a-nugget DOT de)\nIan Lee (IanLee1521 AT gmail DOT com)\nIonuț Arțăriși (ionut AT artarisi DOT eu)\nIvo Danihelka (ivo AT danihelka DOT net)\nIyed (iyed DOT bennour AT gmail DOT com)\nJim Garrison (jim AT garrison DOT cc)\nJohn Gallagher (johnkgallagher AT gmail DOT com)\nJulian Taylor (jtaylor DOT debian AT googlemail DOT com)\nJustin Bronder (jsbronder AT gmail DOT com)\nJustin Riley (justin DOT t DOT riley AT gmail DOT com)\nMarc Abramowitz (marc AT marc-abramowitz DOT com)\nMatthew Aburn (mattja6 AT gmail DOT com)\nMichel Pelletier (pelletier DOT michel AT gmail DOT com)\nMichel Zou (xantares09 AT hotmail DOT com)\nMin Ragan-Kelley (benjaminrk AT gmail DOT com)\nNell Hardcastle (nell AT dev-nell DOT com)\nNicholas Pilkington (nicholas DOT pilkington AT gmail DOT com)\nNicholas Piël (nicholas AT nichol DOT as)\nNick Pellegrino (npellegrino AT mozilla DOT com)\nNicolas Delaby (nicolas DOT delaby AT ezeep DOT com)\nOndrej Certik (ondrej AT certik DOT cz)\nPaul Colomiets (paul AT colomiets DOT name)\nPawel Jasinski (pawel DOT jasinski AT gmail DOT com)\nPhus Lu (phus DOT lu AT gmail DOT com)\nRobert Buchholz (rbu AT goodpoint DOT de)\nRobert Jordens (jordens AT gmail DOT com)\nRyan Cox (ryan DOT a DOT cox AT gmail DOT com)\nRyan Kelly (ryan AT rfk DOT id DOT au)\nScott Maxwell (scott AT codecobblers DOT com)\nScott Sadler (github AT mashi DOT org)\nSimon Knight (simon DOT knight AT gmail DOT com)\nStefan Friesel (sf AT cloudcontrol DOT de)\nStefan van der Walt (stefan AT sun DOT ac DOT za)\nStephen Diehl (stephen DOT m DOT diehl AT gmail DOT com)\nSylvain Corlay (scorlay AT bloomberg DOT net)\nThomas Kluyver (takowl AT gmail DOT com)\nThomas Spura (tomspur AT fedoraproject DOT org)\nTigger Bear (Tigger AT Tiggers-Mac-mini DOT local)\nTorsten Landschoff (torsten DOT landschoff AT dynamore DOT de)\nVadim Markovtsev (v DOT markovtsev AT samsung DOT com)\nYannick Hold (yannickhold AT gmail DOT com)\nZbigniew Jędrzejewski-Szmek (zbyszek AT in DOT waw DOT pl)\nhugo shi (hugoshi AT bleb2 DOT (none))\njdgleeson (jdgleeson AT mac DOT com)\nkyledj (kyle AT bucebuce DOT com)\nspez (steve AT hipmunk DOT com)\nstu (stuart DOT axon AT jpcreative DOT co DOT uk)\nxantares (xantares AT fujitsu-l64 DOT (none))\n\nas reported by:\ngit log --all --format='- %aN (%aE)' | sort -u | sed 's/@/ AT /1' | sed -e 's/\\.\\([^ ]\\)/ DOT \\1/g'\nwith some adjustments.\n\n\n\nBrandon Craig-Rhodes (brandon AT rhodesmill DOT org)\nEugene Chernyshov (chernyshov DOT eugene AT gmail DOT com)\nCraig Austin (craig DOT austin AT gmail DOT com)\n\n\n\n\n\nTravis Cline (travis DOT cline AT gmail DOT com)\nRyan Kelly (ryan AT rfk DOT id DOT au)\nZachary Voase (z AT zacharyvoase DOT com)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html",
     "href": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "from imp import reload"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-for-nbagg-backend.",
     "href": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-for-nbagg-backend.",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "UAT for NbAgg backend.",
     "text": "UAT for NbAgg backend.\nThe first line simply reloads matplotlib, uses the nbagg backend and then reloads the backend, just to ensure we have the latest modification to the backend code. Note: The underlying JavaScript will not be updated by this process, so a refresh of the browser after clearing the output and saving is necessary to clear everything fully.\n\nimport matplotlib\nreload(matplotlib)\n\nmatplotlib.use('nbagg')\n\nimport matplotlib.backends.backend_nbagg\nreload(matplotlib.backends.backend_nbagg)\n\n\nUAT 1 - Simple figure creation using pyplot\nShould produce a figure window which is interactive with the pan and zoom buttons. (Do not press the close button, but any others may be used).\n\nimport matplotlib.backends.backend_webagg_core\nreload(matplotlib.backends.backend_webagg_core)\n\nimport matplotlib.pyplot as plt\nplt.interactive(False)\n\nfig1 = plt.figure()\nplt.plot(range(10))\n\nplt.show()\n\n\n\nUAT 2 - Creation of another figure, without the need to do plt.figure.\nAs above, a new figure should be created.\n\nplt.plot([3, 2, 1])\nplt.show()\n\n\n\nUAT 3 - Connection info\nThe printout should show that there are two figures which have active CommSockets, and no figures pending show.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\n\n\nUAT 4 - Closing figures\nClosing a specific figure instance should turn the figure into a plain image - the UI should have been removed. In this case, scroll back to the first figure and assert this is the case.\n\nplt.close(fig1)\nplt.close('all')\n\n\n\nUAT 5 - No show without plt.show in non-interactive mode\nSimply doing a plt.plot should not show a new figure, nor indeed update an existing one (easily verified in UAT 6). The output should simply be a list of Line2D instances.\n\nplt.plot(range(10))\n\n\n\nUAT 6 - Connection information\nWe just created a new figure, but didn’t show it. Connection info should no longer have “Figure 1” (as we closed it in UAT 4) and should have figure 2 and 3, with Figure 3 without any connections. There should be 1 figure pending.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\n\n\nUAT 7 - Show of previously created figure\nWe should be able to show a figure we’ve previously created. The following should produce two figure windows.\n\nplt.show()\nplt.figure()\nplt.plot(range(5))\nplt.show()\n\n\n\nUAT 8 - Interactive mode\nIn interactive mode, creating a line should result in a figure being shown.\n\nplt.interactive(True)\nplt.figure()\nplt.plot([3, 2, 1])\n\nSubsequent lines should be added to the existing figure, rather than creating a new one.\n\nplt.plot(range(3))\n\nCalling connection_info in interactive mode should not show any pending figures.\n\nprint(matplotlib.backends.backend_nbagg.connection_info())\n\nDisable interactive mode again.\n\nplt.interactive(False)\n\n\n\nUAT 9 - Multiple shows\nUnlike most of the other matplotlib backends, we may want to see a figure multiple times (with or without synchronisation between the views, though the former is not yet implemented). Assert that plt.gcf().canvas.manager.reshow() results in another figure window which is synchronised upon pan & zoom.\n\nplt.gcf().canvas.manager.reshow()\n\n\n\nUAT 10 - Saving notebook\nSaving the notebook (with CTRL+S or File->Save) should result in the saved notebook having static versions of the figures embedded within. The image should be the last update from user interaction and interactive plotting. (check by converting with ipython nbconvert <notebook>)\n\n\nUAT 11 - Creation of a new figure on second show\nCreate a figure, show it, then create a new axes and show it. The result should be a new figure.\nBUG: Sometimes this doesn’t work - not sure why (@pelson).\n\nfig = plt.figure()\nplt.axes()\nplt.show()\n\nplt.plot([1, 2, 3])\nplt.show()\n\n\n\nUAT 12 - OO interface\nShould produce a new figure and plot it.\n\nfrom matplotlib.backends.backend_nbagg import new_figure_manager,show\n\nmanager = new_figure_manager(1000)\nfig = manager.canvas.figure\nax = fig.add_subplot(1,1,1)\nax.plot([1,2,3])\nfig.show()"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-13---animation",
     "href": "my_env/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat.html#uat-13---animation",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "UAT 13 - Animation",
     "text": "UAT 13 - Animation\nThe following should generate an animated line:\n\nimport matplotlib.animation as animation\nimport numpy as np\n\nfig, ax = plt.subplots()\n\nx = np.arange(0, 2*np.pi, 0.01)        # x-array\nline, = ax.plot(x, np.sin(x))\n\ndef animate(i):\n    line.set_ydata(np.sin(x+i/10.0))  # update the data\n    return line,\n\n#Init only required for blitting to give a clean slate.\ndef init():\n    line.set_ydata(np.ma.array(x, mask=True))\n    return line,\n\nani = animation.FuncAnimation(fig, animate, np.arange(1, 200), init_func=init,\n                              interval=100., blit=True)\nplt.show()\n\n\nUAT 14 - Keyboard shortcuts in IPython after close of figure\nAfter closing the previous figure (with the close button above the figure) the IPython keyboard shortcuts should still function.\n\n\nUAT 15 - Figure face colours\nThe nbagg honours all colours apart from that of the figure.patch. The two plots below should produce a figure with a red background. There should be no yellow figure.\n\nimport matplotlib\nmatplotlib.rcParams.update({'figure.facecolor': 'red',\n                            'savefig.facecolor': 'yellow'})\nplt.figure()\nplt.plot([3, 2, 1])\n\nplt.show()\n\n\n\nUAT 16 - Events\nPressing any keyboard key or mouse button (or scrolling) should cycle the line while the figure has focus. The figure should have focus by default when it is created and re-gain it by clicking on the canvas. Clicking anywhere outside of the figure should release focus, but moving the mouse out of the figure should not release focus.\n\nimport itertools\nfig, ax = plt.subplots()\nx = np.linspace(0,10,10000)\ny = np.sin(x)\nln, = ax.plot(x,y)\nevt = []\ncolors = iter(itertools.cycle(['r', 'g', 'b', 'k', 'c']))\ndef on_event(event):\n    if event.name.startswith('key'):\n        fig.suptitle('%s: %s' % (event.name, event.key))\n    elif event.name == 'scroll_event':\n        fig.suptitle('%s: %s' % (event.name, event.step))\n    else:\n        fig.suptitle('%s: %s' % (event.name, event.button))\n    evt.append(event)\n    ln.set_color(next(colors))\n    fig.canvas.draw()\n    fig.canvas.draw_idle()\n\nfig.canvas.mpl_connect('button_press_event', on_event)\nfig.canvas.mpl_connect('button_release_event', on_event)\nfig.canvas.mpl_connect('scroll_event', on_event)\nfig.canvas.mpl_connect('key_press_event', on_event)\nfig.canvas.mpl_connect('key_release_event', on_event)\n\nplt.show()\n\n\n\nUAT 17 - Timers\nSingle-shot timers follow a completely different code path in the nbagg backend than regular timers (such as those used in the animation example above.) The next set of tests ensures that both “regular” and “single-shot” timers work properly.\nThe following should show a simple clock that updates twice a second:\n\nimport time\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\n\ndef update(text):\n    text.set(text=time.ctime())\n    text.axes.figure.canvas.draw()\n    \ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\ntimer.start()\nplt.show()\n\nHowever, the following should only update once and then stop:\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center') \ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.single_shot = True\ntimer.start()\n\nplt.show()\n\nAnd the next two examples should never show any visible text at all:\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.start()\ntimer.stop()\n\nplt.show()\n\n\nfig, ax = plt.subplots()\ntext = ax.text(0.5, 0.5, '', ha='center')\ntimer = fig.canvas.new_timer(500, [(update, [text], {})])\n\ntimer.single_shot = True\ntimer.start()\ntimer.stop()\n\nplt.show()\n\n\n\nUAT 18 - stopping figure when removed from DOM\nWhen the div that contains from the figure is removed from the DOM the figure should shut down it’s comm, and if the python-side figure has no more active comms, it should destroy the figure. Repeatedly running the cell below should always have the same figure number\n\nfig, ax = plt.subplots()\nax.plot(range(5))\nplt.show()\n\nRunning the cell below will re-show the figure. After this, re-running the cell above should result in a new figure number.\n\nfig.canvas.manager.reshow()\n\n\n\nUAT 19 - Blitting\nClicking on the figure should plot a green horizontal line moving up the axes.\n\nimport itertools\n\ncnt = itertools.count()\nbg = None\n\ndef onclick_handle(event):\n    \"\"\"Should draw elevating green line on each mouse click\"\"\"\n    global bg\n    if bg is None:\n        bg = ax.figure.canvas.copy_from_bbox(ax.bbox) \n    ax.figure.canvas.restore_region(bg)\n\n    cur_y = (next(cnt) % 10) * 0.1\n    ln.set_ydata([cur_y, cur_y])\n    ax.draw_artist(ln)\n    ax.figure.canvas.blit(ax.bbox)\n\nfig, ax = plt.subplots()\nax.plot([0, 1], [0, 1], 'r')\nln, = ax.plot([0, 1], [0, 0], 'g', animated=True)\nplt.show()\nax.figure.canvas.draw()\n\nax.figure.canvas.mpl_connect('button_press_event', onclick_handle)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/traitlets-5.4.0.dist-info/licenses/COPYING.html",
     "href": "my_env/lib/python3.10/site-packages/traitlets-5.4.0.dist-info/licenses/COPYING.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "Traitlets is adapted from enthought.traits, Copyright (c) Enthought, Inc., under the terms of the Modified BSD License.\nThis project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2001-, IPython Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the IPython Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe IPython Development Team is the set of all contributors to the IPython project. This includes all of the IPython subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nIPython uses a shared copyright model. Each contributor maintains copyright over their contributions to IPython. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the IPython source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire IPython Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the IPython repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/ipykernel-6.16.0.dist-info/licenses/COPYING.html",
     "href": "my_env/lib/python3.10/site-packages/ipykernel-6.16.0.dist-info/licenses/COPYING.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2015, IPython Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the IPython Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe IPython Development Team is the set of all contributors to the IPython project. This includes all of the IPython subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/ipython/.\n\n\n\nIPython uses a shared copyright model. Each contributor maintains copyright over their contributions to IPython. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the IPython source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire IPython Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the IPython repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/QtPy-2.2.0.dist-info/AUTHORS.html",
     "href": "my_env/lib/python3.10/site-packages/QtPy-2.2.0.dist-info/AUTHORS.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "pyqode.qt: Colin Duquesnoy (@ColinDuquesnoy)\nspyderlib.qt: Pierre Raybaut (@PierreRaybaut)\nqt-helpers: Thomas Robitaille (@astrofrog)\n\n\n\n\n\nDaniel Althviz (@dalthviz)\nCarlos Cordoba (@ccordoba12)\nC.A.M. Gerlach (@CAM-Gerlach)\nSpyder Development Team (Spyder-IDE)\n\n\n\n\n\nThe QtPy Contributors"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/idna-3.4.dist-info/LICENSE.html",
     "href": "my_env/lib/python3.10/site-packages/idna-3.4.dist-info/LICENSE.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "Copyright (c) 2013-2021, Kim Davies All rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/jupyter_client-7.3.5.dist-info/licenses/COPYING.html",
     "href": "my_env/lib/python3.10/site-packages/jupyter_client-7.3.5.dist-info/licenses/COPYING.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2001-2015, IPython Development Team\nCopyright (c) 2015-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Unicode.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Unicode.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print('☃')\n\n☃"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/update-display-id.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/update-display-id.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "display('above')\ndisplay_with_id(1, 'here')\ndisplay('below')\n\n'above'\n\n\n8\n\n\n'below'\n\n\n\ndisplay_with_id(2, 'here')\ndisplay_with_id(3, 'there')\ndisplay_with_id(4, 'here')\n\n8\n\n\n6\n\n\n8\n\n\n\ndisplay_with_id(5, 'there')\ndisplay_with_id(6, 'there', update=True)\n\n6\n\n\n\ndisplay_with_id(7, 'here')\ndisplay_with_id(8, 'here', update=True)\ndisplay_with_id(9, 'result', execute_result=True)\n\n8\n\n\n10\n\n\n\ndisplay_with_id(10, 'result', update=True)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/JupyterWidgets.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/JupyterWidgets.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "# it should also handle custom msg'es\nlabel.send({'msg': 'Hello'})"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Exceptions.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Exceptions.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print('ok')\n\nok"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Sleep1s.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Sleep1s.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "t0 = datetime.datetime.utcnow()\ntime.sleep(1)\nt1 = datetime.datetime.utcnow()\n\n\ntime_format = '%Y-%m-%dT%H:%M:%S.%fZ'\nprint(t0.strftime(time_format), end='')\n\n\nprint(t1.strftime(time_format), end='')"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Parallel Execute B.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Parallel Execute B.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This notebook uses a file system based “lock” to assert that two instances of the notebook kernel will run in parallel. Each instance writes to a file in a temporary directory, and then tries to read the other file from the temporary directory, so that running them in sequence will fail, but running them in parallel will succeed.\nTwo notebooks are launched, each which sets the this_notebook variable. One notebook is set to this_notebook = 'A' and the other this_notebook = 'B'.\n\nimport os\nimport os.path\nimport tempfile\nimport time\n\n\n# the variable this_notebook is injectected in a cell above by the test framework.\nthis_notebook = 'B'\nother_notebook = 'A'\ndirectory = os.environ['NBEXECUTE_TEST_PARALLEL_TMPDIR']\nwith open(os.path.join(directory, 'test_file_{}.txt'.format(this_notebook)), 'w') as f:\n    f.write('Hello from {}'.format(this_notebook))\n\n\nstart = time.time()\ntimeout = 5\nend = start + timeout\ntarget_file = os.path.join(directory, 'test_file_{}.txt'.format(other_notebook))\nwhile time.time() < end:\n    time.sleep(0.1)\n    if os.path.exists(target_file):\n        with open(target_file, 'r') as f:\n            text = f.read()\n        if text == 'Hello from {}'.format(other_notebook):\n            break\nelse:\n    assert False, \"Timed out – didn't get a message from {}\".format(other_notebook)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/HelloWorld.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/HelloWorld.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print(\"Hello World\")\n\nHello World"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Check History in Memory.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Check History in Memory.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "ip = get_ipython()\nassert ip.history_manager.hist_file == ':memory:'"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Other Comms.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Other Comms.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "comm = Comm('this-comm-tests-a-missing-handler', data={'id': 'foo'})\n\n\ncomm.send(data={'id': 'bar'})"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Disable Stdin.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Disable Stdin.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "try:\n    input = raw_input\nexcept:\n    pass\n\nname = input(\"name: \")"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/SVG.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/SVG.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "SVG(data='''\n<svg height=\"100\" width=\"100\">\n    <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"2\" fill=\"red\" />\n</svg>''')"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Parallel Execute A.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Parallel Execute A.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This notebook uses a file system based “lock” to assert that two instances of the notebook kernel will run in parallel. Each instance writes to a file in a temporary directory, and then tries to read the other file from the temporary directory, so that running them in sequence will fail, but running them in parallel will succeed.\nTwo notebooks are launched, each which sets the this_notebook variable. One notebook is set to this_notebook = 'A' and the other this_notebook = 'B'.\n\nimport os\nimport os.path\nimport tempfile\nimport time\n\n\n# the variable this_notebook is injectected in a cell above by the test framework.\nthis_notebook = 'A'\nother_notebook = 'B'\ndirectory = os.environ['NBEXECUTE_TEST_PARALLEL_TMPDIR']\nwith open(os.path.join(directory, 'test_file_{}.txt'.format(this_notebook)), 'w') as f:\n    f.write('Hello from {}'.format(this_notebook))\n\n\nstart = time.time()\ntimeout = 5\nend = start + timeout\ntarget_file = os.path.join(directory, 'test_file_{}.txt'.format(other_notebook))\nwhile time.time() < end:\n    time.sleep(0.1)\n    if os.path.exists(target_file):\n        with open(target_file, 'r') as f:\n            text = f.read()\n        if text == 'Hello from {}'.format(other_notebook):\n            break\nelse:\n    assert False, \"Timed out – didn't get a message from {}\".format(other_notebook)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/UnicodePy3.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/UnicodePy3.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print('☃')\n\n☃"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Autokill.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Autokill.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "import os\nimport signal\npid = os.getpid()\nos.kill(pid, signal.SIGTERM)"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Output.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Output.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print(\"hi\")\nwith output1:\n    print(\"in output\")\n\nhi\n\n\n\nwith output1:\n    raise ValueError(\"trigger msg_type=error\")\n\n\nimport ipywidgets as widgets\noutput2 = widgets.Output()\noutput2\n\n\n\n\n\nprint(\"hi2\")\nwith output2:\n    print(\"in output2\")\n    clear_output(wait=True)\n\nhi2\n\n\n\nimport ipywidgets as widgets\noutput3 = widgets.Output()\noutput3\n\n\n\n\n\nprint(\"hi3\")\nwith output3:\n    print(\"hello\")\n    clear_output(wait=True)\n    print(\"world\")\n\nhi3\n\n\n\nimport ipywidgets as widgets\noutput4 = widgets.Output()\noutput4\n\n\n\n\n\nprint(\"hi4\")\nwith output4:\n    print(\"hello world\")\n    clear_output()\n\nhi4\n\n\n\nimport ipywidgets as widgets\noutput5 = widgets.Output()\noutput5\n\n\n\n\n\nprint(\"hi5\")\nwith output5:\n    display(\"hello world\") # this is not a stream but plain text\nclear_output()\n\n\nimport ipywidgets as widgets\noutput_outer = widgets.Output()\noutput_inner = widgets.Output()\noutput_inner\n\n\n\n\n\noutput_outer\n\n\n\n\n\nwith output_inner:\n    print('in inner')\n    with output_outer:\n        print('in outer')\n    print('also in inner')"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print('ok')\n\nok"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Interrupt.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Interrupt.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print(\"done\")\n\ndone"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Factorials.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Factorials.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "for m in range(10):\n    i, j = j, i + j\n    print(j)\n\n2\n3\n5\n8\n13\n21\n34\n55\n89\n144"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Error.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Error.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "0/0\n\nZeroDivisionError: division by zero"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Empty Cell.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Empty Cell.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "\"Code 1\"\n\n'Code 1'\n\n\n\n\"Code 2\"\n\n'Code 2'"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Inline Image.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Inline Image.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "Image('python.png')"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Skip Execution with Cell Tag.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "print('ok')\n\nok"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Clear Output.html",
     "href": "my_env/lib/python3.10/site-packages/nbclient/tests/files/Clear Output.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "for i in range(10):\n    clear_output()\n    print(i)\n\n9\n\n\n\nprint(\"Hello world\")\nclear_output()\n\n\nprint(\"Hello world\", end='')\nclear_output(wait=True)  # no output after this\n\nHello world\n\n\n\nprint(\"Hello\", end='')\nclear_output(wait=True)  # here we have new output after wait=True\nprint(\"world\", end='')\n\nworld\n\n\n\nhandle0 = display(\"Hello world\", display_id=\"id0\")\n\n'Hello world'\n\n\n\nhandle1 = display(\"Hello\", display_id=\"id1\")\n\n'world'\n\n\n\nhandle1.update('world')\n\n\nhandle2 = display(\"Hello world\", display_id=\"id2\")\nclear_output()  # clears all output, also with display_ids\n\n\nhandle3 = display(\"Hello world\", display_id=\"id3\")\nclear_output(wait=True)\n\n'Hello world'\n\n\n\nhandle4 = display(\"Hello\", display_id=\"id4\")\nclear_output(wait=True)\nprint('world', end='')\n\nworld\n\n\n\nhandle4.update('Hello world')  # it is cleared, so it should not show up in the above cell"
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/soupsieve-2.3.2.post1.dist-info/license_files/LICENSE.html",
     "href": "my_env/lib/python3.10/site-packages/soupsieve-2.3.2.post1.dist-info/license_files/LICENSE.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "Copyright (c) 2018 - 2022 Isaac Muse isaacmuse@gmail.com\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/nbformat-5.6.1.dist-info/licenses/COPYING.html",
     "href": "my_env/lib/python3.10/site-packages/nbformat-5.6.1.dist-info/licenses/COPYING.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "This project is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2001-2015, IPython Development Team\nCopyright (c) 2015-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects.\nThe core team that coordinates development on GitHub can be found here: https://github.com/jupyter/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. But, it is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code, in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
   },
   {
     "objectID": "my_env/lib/python3.10/site-packages/jupyter_core-4.11.1.dist-info/license_files/COPYING.html",
     "href": "my_env/lib/python3.10/site-packages/jupyter_core-4.11.1.dist-info/license_files/COPYING.html",
-    "title": "FdR",
+    "title": "Documenting my R/Python learning journey",
     "section": "",
     "text": "Jupyter is licensed under the terms of the Modified BSD License (also known as New or Revised or 3-Clause BSD), as follows:\n\nCopyright (c) 2015-, Jupyter Development Team\n\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\nRedistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\nRedistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\nNeither the name of the Jupyter Development Team nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project. This includes all of the Jupyter subprojects. A full list with details is kept in the documentation directory, in the file about/credits.txt.\nThe core team that coordinates development on GitHub can be found here: https://github.com/ipython/.\n\n\n\nJupyter uses a shared copyright model. Each contributor maintains copyright over their contributions to Jupyter. It is important to note that these contributions are typically only changes to the repositories. Thus, the Jupyter source code in its entirety is not the copyright of any single person or institution. Instead, it is the collective copyright of the entire Jupyter Development Team. If individual contributors want to maintain a record of what changes/contributions they have specific copyright on, they should indicate their copyright in the commit message of the change, when they commit the change to one of the Jupyter repositories.\nWith this in mind, the following banner should be used in any source code file to indicate the copyright and license terms:\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License."
   },
@@ -249,7 +249,35 @@
     "href": "posts/kmeans/index.html",
     "title": "Kmeans with regime changes",
     "section": "",
-    "text": "library(readr)\nlibrary(glue)\nlibrary(dplyr)\nthe_path <- here::here()\ndf <- read_csv(glue(the_path, \"/raw_data/intc.csv\"))\nglimpse(df)\n\nRows: 10,736\nColumns: 7\n$ Date        <dttm> 1980-03-17 05:00:00, 1980-03-18 05:00:00, 1980-03-19 05:0…\n$ Open        <dbl> 0.325521, 0.325521, 0.330729, 0.330729, 0.322917, 0.316406…\n$ High        <dbl> 0.330729, 0.328125, 0.335938, 0.334635, 0.322917, 0.316406…\n$ Low         <dbl> 0.325521, 0.322917, 0.330729, 0.329427, 0.317708, 0.311198…\n$ Close       <dbl> 0.325521, 0.322917, 0.330729, 0.329427, 0.317708, 0.311198…\n$ `Adj Close` <dbl> 0.1907656, 0.1892397, 0.1938178, 0.1930547, 0.1861870, 0.1…\n$ Volume      <dbl> 10924800, 17068800, 18508800, 11174400, 12172800, 8966400,…\n\n\n\nUsing python\nOriginal blog post\n\nimport yfinance as yf     #only to download data\ndata  = yf.download(\"INTC\")\ndata.to_csv(\"../../raw_data/intc.csv\")\n\n\nimport pandas as pd\n\npy_df = pd.read_csv(\"../../raw_data/intc.csv\", names = ['date', 'open', 'high', 'low', 'close', 'adj_close', 'volume']).iloc[1: , :]\npy_df.tail()\n\n                            date  ...    volume\n10732  2022-10-06 00:00:00-04:00  ...  33985100\n10733  2022-10-07 00:00:00-04:00  ...  57167100\n10734  2022-10-10 00:00:00-04:00  ...  43409300\n10735  2022-10-11 00:00:00-04:00  ...  48134900\n10736  2022-10-12 00:00:00-04:00  ...  39607800\n\n[5 rows x 7 columns]\n\npy_df.info()\n\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 10736 entries, 1 to 10736\nData columns (total 7 columns):\n #   Column     Non-Null Count  Dtype \n---  ------     --------------  ----- \n 0   date       10736 non-null  object\n 1   open       10736 non-null  object\n 2   high       10736 non-null  object\n 3   low        10736 non-null  object\n 4   close      10736 non-null  object\n 5   adj_close  10736 non-null  object\n 6   volume     10736 non-null  object\ndtypes: object(7)\nmemory usage: 587.3+ KB\n\npy_df.shape\n\n(10736, 7)\n\npy_df_melt = py_df.melt(id_vars = 'date', value_vars = ['open', 'high', 'low', 'close'], value_name = 'prices', var_name = 'price_point')\npy_df_melt.info()\n\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 42944 entries, 0 to 42943\nData columns (total 3 columns):\n #   Column       Non-Null Count  Dtype \n---  ------       --------------  ----- \n 0   date         42944 non-null  object\n 1   price_point  42944 non-null  object\n 2   prices       42944 non-null  object\ndtypes: object(3)\nmemory usage: 1006.6+ KB\n\npy_df_melt.shape\n\n(42944, 3)\n\n\n\nimport talib as ta\n\ncci = ta.CCI(py_df.high, py_df.low, py_df.close, timeperiod = 17)\nht = ta.HT_DCPHASE(py_df.close)\naaron = ta.AROONOSC(py_df.high, py_df.low, timeperiod = 17)\n\nta_df = pd.DataFrame({\"date_time\": py_df['date'].to_list(), \"cci\": cci, \"aaron\":aaron, \"ht\": ht})\nta_df = ta_df.dropna()\npy_df = py_df.loc[ta_df.index, :]   #slicing to get same rows as those in ta_df\n\nta_df.pop(\"date_time\")\n\n64       1980-06-16 00:00:00-04:00\n65       1980-06-17 00:00:00-04:00\n66       1980-06-18 00:00:00-04:00\n67       1980-06-19 00:00:00-04:00\n68       1980-06-20 00:00:00-04:00\n                   ...            \n10732    2022-10-06 00:00:00-04:00\n10733    2022-10-07 00:00:00-04:00\n10734    2022-10-10 00:00:00-04:00\n10735    2022-10-11 00:00:00-04:00\n10736    2022-10-12 00:00:00-04:00\nName: date_time, Length: 10673, dtype: object"
+    "text": "This post is about how to use Kmeans to classify various market regimes or to use kmeans to classifiy financial observations.\nWith K-means we are trying to establish groups of data that are homegenous and distinctly different from other groups. The K- stands for the number of clusters we will create.\nThe concept of distance comes in when deciding if a data point belongs to a cluster. The most common way to measure distance is the Euclidean Distance.\nWith multivariate data set, it is important to normalize the data.\nA usual rule of thumb is to set the number of clusters as the square root of the number of observation."
+  },
+  {
+    "objectID": "posts/kmeans/index.html#loading-up-pckages-and-reading-data",
+    "href": "posts/kmeans/index.html#loading-up-pckages-and-reading-data",
+    "title": "Kmeans with regime changes",
+    "section": "Loading up pckages and reading data",
+    "text": "Loading up pckages and reading data\n\nlibrary(readr)        # load and read .csv file\nlibrary(glue)         # concatenate strings together\nlibrary(dplyr)        # the tidy plyr tool for data wrangling\nlibrary(tidyr)        # to use theh drop_na function\n\nthe_path <- here::here()\n\ndf <- read_csv(glue(the_path, \"/raw_data/intc.csv\")) |> \n  rename(date = Date, high = High, low = Low, close = Close, adj_close = 'Adj Close') |> \n  select(date, high, low, close, adj_close)\nglimpse(df)\n\nRows: 10,738\nColumns: 5\n$ date      <dttm> 1980-03-17 05:00:00, 1980-03-18 05:00:00, 1980-03-19 05:00:…\n$ high      <dbl> 0.330729, 0.328125, 0.335938, 0.334635, 0.322917, 0.316406, …\n$ low       <dbl> 0.325521, 0.322917, 0.330729, 0.329427, 0.317708, 0.311198, …\n$ close     <dbl> 0.325521, 0.322917, 0.330729, 0.329427, 0.317708, 0.311198, …\n$ adj_close <dbl> 0.1907656, 0.1892397, 0.1938177, 0.1930547, 0.1861870, 0.182…"
+  },
+  {
+    "objectID": "posts/kmeans/index.html#feature-engineering",
+    "href": "posts/kmeans/index.html#feature-engineering",
+    "title": "Kmeans with regime changes",
+    "section": "feature engineering",
+    "text": "feature engineering\n\nlibrary(TTR)      # The technical analysis package\n\nyo <- aroon(df[, c('high', 'low')], n = 23)\ndf$aroon <- yo[, 3]\nyo <- CCI(df[, c('high', 'low', 'close')], n = 17)\ndf$cci <- yo\nyo <- chaikinVolatility(df[, c('high', 'low')], n = 13)\ndf$chaikinVol <- yo\n\ndf1 <- df |> \n  select(date, aroon, cci, chaikinVol, adj_close) |> \n  mutate(across(c(aroon, cci, chaikinVol), ~ as.numeric(scale(.)))) |>\n  drop_na()\n\nskimr::skim(df1 %>% select(-date))\n\n\nData summary\n\n\nName\ndf1 %>% select(-date)\n\n\nNumber of rows\n10713\n\n\nNumber of columns\n4\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\nnumeric\n4\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\naroon\n0\n1\n0.00\n1.00\n-1.70\n-0.95\n0.29\n0.91\n1.46\n▆▆▂▇▇\n\n\ncci\n0\n1\n0.00\n1.00\n-4.30\n-0.80\n0.06\n0.78\n3.87\n▁▃▇▅▁\n\n\nchaikinVol\n0\n1\n0.00\n1.00\n-2.42\n-0.62\n-0.14\n0.42\n12.71\n▇▂▁▁▁\n\n\nadj_close\n0\n1\n14.89\n15.23\n0.13\n0.77\n12.90\n19.88\n65.25\n▇▅▁▁▁\n\n\n\n\n# also good to check for correlation between variables. \nlibrary(corrr)\ndf1 |> select(-date, -adj_close) |> \n  correlate() |> \n  rearrange() |> \n  shave()\n\n# A tibble: 3 × 4\n  term            cci   aroon chaikinVol\n  <chr>         <dbl>   <dbl>      <dbl>\n1 cci        NA       NA              NA\n2 aroon       0.567   NA              NA\n3 chaikinVol -0.00427  0.0211         NA"
+  },
+  {
+    "objectID": "posts/kmeans/index.html#creating-our-kmeans-clusters",
+    "href": "posts/kmeans/index.html#creating-our-kmeans-clusters",
+    "title": "Kmeans with regime changes",
+    "section": "Creating our kmeans clusters",
+    "text": "Creating our kmeans clusters\n\nlibrary(purrr)     #use the map function\nlibrary(broom)     #use the glance function on kmeans \n\nkclusts <- tibble(k = 1:9) |> \n  mutate(kclust = map(k, ~kmeans(df1 %>% select(-date, -adj_close), centers = .x, iter.max = 50L)), \n         glanced = map(kclust, glance))\n\nkclusts |> unnest(cols = c('glanced'))\n\n# A tibble: 9 × 6\n      k kclust    totss tot.withinss betweenss  iter\n  <int> <list>    <dbl>        <dbl>     <dbl> <int>\n1     1 <kmeans> 32127.       32127.  2.36e-10     1\n2     2 <kmeans> 32127.       19719.  1.24e+ 4     1\n3     3 <kmeans> 32127.       15887.  1.62e+ 4     3\n4     4 <kmeans> 32127.       13467.  1.87e+ 4     4\n5     5 <kmeans> 32127.       11165.  2.10e+ 4     5\n6     6 <kmeans> 32127.        9723.  2.24e+ 4     5\n7     7 <kmeans> 32127.        8508.  2.36e+ 4     5\n8     8 <kmeans> 32127.        7773.  2.44e+ 4     7\n9     9 <kmeans> 32127.        7553.  2.46e+ 4     7\n\n\nThere are several ways to choose the ideal number of clusters. One of them is the elbow method, another one is the Silhouette Method.\nThe tot.withinss is the total within-cluster sum of square. This is the value used for the eblow method.\nLet’s try with the Silouhette Method. We can use the cluster package for that.\n\navg_sil <- function(k) { \n  kmeans_object <- kmeans(df1 |> select(-date, -adj_close), centers = k, iter.max = 50L)\n  silh = cluster::silhouette(kmeans_object$cluster, dist(df1 |> select(-date, -adj_close)))\n  mean(silh[, 3])\n  }\n\n# Compute and plot wss for k = 2 to k = 15\nyo <- tibble(k_values =  2:9) |> \n  mutate(avg_sil_values = map_dbl(k_values, avg_sil))"
+  },
+  {
+    "objectID": "posts/kmeans/index.html#some-visualizations",
+    "href": "posts/kmeans/index.html#some-visualizations",
+    "title": "Kmeans with regime changes",
+    "section": "Some visualizations",
+    "text": "Some visualizations\n\nElbow method\n\nlibrary(ggplot2)\nkclusts |> \n  unnest(cols = c('glanced')) |> \n  ggplot(aes(k, tot.withinss)) + \n  geom_line(alpha = 0.5, size = 1.2, color = 'midnightblue') + \n  geom_point(size = 2, color = 'midnightblue')\n\n\n\n\nTotal within-cluster sum of square for k-cluster\n\n\n\n\nBased on the elbow method, I would be tempted to choose to 5 clusters (2 seems another obvious one).\n\n\nSilhouette Method\n\nyo |> ggplot(aes(k_values, avg_sil_values)) + \n  geom_line(alpha = 0.5, size = 1.2, color = 'midnightblue') + \n  geom_point(size = 2, color = 'midnightblue')\n\n\n\n\nSilhouette score for k-clusters\n\n\n\n\n2 is the winner ;-)\n\n\nPlotting the stocks with clustered observations\n\nlibrary(lubridate)\n\n\nAttaching package: 'lubridate'\n\n\nThe following objects are masked from 'package:base':\n\n    date, intersect, setdiff, union\n\nyo <- kmeans(df1 |> select(-date, -adj_close), centers = 2)\naugment(yo, df1) |> filter(date >= today() - 500) |> \n  ggplot(aes(x = date, y = adj_close)) + \n    geom_line(alpha = 0.5, color = 'midnightblue') + \n    geom_point(aes(color = .cluster)) + \n    theme(legend.position = 'none')\n\n\n\nyo <- kmeans(df1 |> select(-date, -adj_close), centers = 5)\naugment(yo, df1) |> filter(date >= today() - 500) |> \n  ggplot(aes(x = date, y = adj_close)) + \n    geom_line(alpha = 0.5, color = 'midnightblue') + \n    geom_point(aes(color = .cluster)) + \n    theme(legend.position = 'none')"
   },
   {
     "objectID": "posts/welcome/index.html",

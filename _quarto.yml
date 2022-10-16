@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "FdR"
+  title: "Documenting my R/Python learning journey"
   navbar:
     right:
       - about.qmd
@@ -16,5 +16,5 @@ format:
     theme: journal
     css: styles.css
 
-editor: visual
+editor: source
 

@@ -8,9 +8,9 @@ editor: source
 
 This post is about using xgboost on a time-series using both R with the tidymodel framework and python.  It is part of a series of articles aiming at translating python timeseries blog articles into their tidymodels equivalent. 
 
-The raw data is quite simple as it is energy consumption based on an hourly consumption. Original article can be found [here](https://www.kaggle.com/code/robikscube/tutorial-time-series-forecasting-with-xgboost/notebook).  Mimimal changes were made to better fit current python practices.  
+The raw data is quite simple as it is energy consumption based on an hourly consumption. Original article can be found [here](https://www.kaggle.com/code/robikscube/tutorial-time-series-forecasting-with-xgboost/notebook).  Minimal changes were made to better fit current python practices.  
 
-Xgboost is part of the ensemble machine learning algorithms.  It can be used for both regression and classification.  There are few issues in using xgboost with time-series.  This article is taking a Xgboost post in python and also translating with the new R tidymodel framework.  
+Xgboost is part of the ensemble machine learning algorithms.  It can be used for both regression and classification.  There are few issues in using Xgboost with time-series.  This article is taking a Xgboost post in python and also translating with the new R tidymodel framework.  
 
 # Loading data and features engineering 
 
