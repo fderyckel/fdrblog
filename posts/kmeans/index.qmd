@@ -17,7 +17,7 @@ A usual rule of thumb is to set the number of clusters as the square root of the
 
 # Using R 
 
-## Loading up pckages and reading data 
+## Load up packages and read data 
 
 ```{r}
 #| label: setting_up
@@ -27,7 +27,7 @@ A usual rule of thumb is to set the number of clusters as the square root of the
 library(readr)        # load and read .csv file
 library(glue)         # concatenate strings together
 library(dplyr)        # the tidy plyr tool for data wrangling
-library(tidyr)        # to use theh drop_na function
+library(tidyr)        # to use the drop_na function
 
 the_path <- here::here()
 
@@ -37,7 +37,7 @@ df <- read_csv(glue(the_path, "/raw_data/intc.csv")) |>
 glimpse(df)
 ```
 
-## feature engineering 
+## Feature engineering 
 
 ```{r}
 #| label: features_engineering_in_r
@@ -68,17 +68,21 @@ df1 |> select(-date, -adj_close) |>
   shave()
 ```
 
-## Creating our kmeans clusters
+These 3 variables seem to complete each other well as little to-no correlation. 
+
+## Create clusters
 
 ```{r}
 #| label: creating_cluster_in_r
 
 library(purrr)     #use the map function
 library(broom)     #use the glance function on kmeans 
+df1sc <- df1 %>% select(-date, -adj_close)
 
 kclusts <- tibble(k = 1:9) |> 
-  mutate(kclust = map(k, ~kmeans(df1 %>% select(-date, -adj_close), centers = .x, iter.max = 50L)), 
-         glanced = map(kclust, glance))
+  mutate(kclust = map(k, ~kmeans(df1sc, centers = .x, iter.max = 50L)), 
+         glanced = map(kclust, glance), 
+         augmented = map(kclust, augment, df1))
 
 kclusts |> unnest(cols = c('glanced'))
 
@@ -88,21 +92,37 @@ There are several ways to choose the ideal number of clusters.  One of them is t
 
 The **tot.withinss** is the total within-cluster sum of square. This is the value used for the eblow method. 
 
-Let's try with the Silouhette Method.  We can use the **cluster** package for that. 
+For the Silhouette Method, we can use the **cluster** package. 
 
 ```{r}
 #| label: calculate_silhoutte_value_in_r
 #| cache: true
 
 avg_sil <- function(k) { 
-  kmeans_object <- kmeans(df1 |> select(-date, -adj_close), centers = k, iter.max = 50L)
-  silh = cluster::silhouette(kmeans_object$cluster, dist(df1 |> select(-date, -adj_close)))
+  kmeans_object <- kmeans(df1sc, centers = k, iter.max = 50L)
+  silh = cluster::silhouette(kmeans_object$cluster, dist(df1sc))
   mean(silh[, 3])
   }
 
 # Compute and plot wss for k = 2 to k = 15
 yo <- tibble(k_values =  2:9) |> 
   mutate(avg_sil_values = map_dbl(k_values, avg_sil))
+
+yo
+```
+
+A more elegant way to do that, using [this post from SO](https://stackoverflow.com/questions/63780363/r-using-purrr-map-function-to-calculate-silhouette-distances-of-kmeans-model)
+```{r}
+#| label: calculate_silhoutte_value_in_r_elegant
+#| cache: true
+
+yo <- kclusts |> 
+  mutate(silhouetted = map(augmented, ~ cluster::silhouette(as.numeric(levels(.x$.cluster))[.x$.cluster], dist(df1sc)))) |> 
+  select(k, silhouetted) |> unnest(cols=c('silhouetted')) |> 
+  group_by(k) %>% 
+  summarise(avg_sil_values = mean(silhouetted[,3]))
+
+yo
 ```
 
 
@@ -131,7 +151,7 @@ Based on the elbow method, I would be tempted to choose to 5 clusters (2 seems a
 #| label: silhouette_score_graph_r
 #| fig-cap: "Silhouette score for k-clusters"
 
-yo |> ggplot(aes(k_values, avg_sil_values)) + 
+yo |> ggplot(aes(k, avg_sil_values)) + 
   geom_line(alpha = 0.5, size = 1.2, color = 'midnightblue') + 
   geom_point(size = 2, color = 'midnightblue')
   
@@ -141,6 +161,11 @@ yo |> ggplot(aes(k_values, avg_sil_values)) +
 ### Plotting the stocks with clustered observations 
 
 ```{r}
+#| label: plotting_with_2clusters_observation
+#| warning: false
+#| message: false
+#| fig-cap: "Plotting adjusted close price with only 2 clusters"
+
 library(lubridate)
 yo <- kmeans(df1 |> select(-date, -adj_close), centers = 2)
 augment(yo, df1) |> filter(date >= today() - 500) |> 
@@ -149,13 +174,32 @@ augment(yo, df1) |> filter(date >= today() - 500) |>
     geom_point(aes(color = .cluster)) + 
     theme(legend.position = 'none')
 
-yo <- kmeans(df1 |> select(-date, -adj_close), centers = 5)
+```
+
+```{r}
+#| fig-cap: "Plotting adjusted close price with only 3 clusters"
+#| label: plotting_with_only_3clusters
+
+yo <- kmeans(df1 |> select(-date, -adj_close), centers = 3)
 augment(yo, df1) |> filter(date >= today() - 500) |> 
   ggplot(aes(x = date, y = adj_close)) + 
     geom_line(alpha = 0.5, color = 'midnightblue') + 
     geom_point(aes(color = .cluster)) + 
     theme(legend.position = 'none')
 ```
+
+```{r}
+#| label: platting_with_only_6clusters
+#| fig-cap: "Plotting adjusted close price with only 6 clusters"
+
+yo <- kmeans(df1 |> select(-date, -adj_close), centers = 6)
+augment(yo, df1) |> filter(date >= today() - 500) |> 
+  ggplot(aes(x = date, y = adj_close)) + 
+    geom_line(alpha = 0.5, color = 'midnightblue') + 
+    geom_point(aes(color = .cluster)) + 
+    theme(legend.position = 'none')
+```
+
 
 # Using python 
 Original blog post 
