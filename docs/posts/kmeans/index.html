@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -164,7 +164,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Kmeans with regime changes</h1>
@@ -199,8 +199,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#using-r" id="toc-using-r" class="nav-link active" data-scroll-target="#using-r">Using R</a>
+  <ul class="collapse">
+  <li><a href="#load-up-packages-and-read-data" id="toc-load-up-packages-and-read-data" class="nav-link" data-scroll-target="#load-up-packages-and-read-data">Load up packages and read data</a></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering">Feature engineering</a></li>
+  <li><a href="#create-clusters" id="toc-create-clusters" class="nav-link" data-scroll-target="#create-clusters">Create clusters</a></li>
+  <li><a href="#some-visualizations" id="toc-some-visualizations" class="nav-link" data-scroll-target="#some-visualizations">Some visualizations</a>
+  <ul class="collapse">
+  <li><a href="#elbow-method" id="toc-elbow-method" class="nav-link" data-scroll-target="#elbow-method">Elbow method</a></li>
+  <li><a href="#silhouette-method" id="toc-silhouette-method" class="nav-link" data-scroll-target="#silhouette-method">Silhouette Method</a></li>
+  <li><a href="#plotting-the-stocks-with-clustered-observations" id="toc-plotting-the-stocks-with-clustered-observations" class="nav-link" data-scroll-target="#plotting-the-stocks-with-clustered-observations">Plotting the stocks with clustered observations</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#using-python" id="toc-using-python" class="nav-link" data-scroll-target="#using-python">Using python</a></li>
+  </ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -208,6 +230,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p>This post is about how to use Kmeans to classify various market regimes or to use kmeans to classifiy financial observations.</p>
+<div class="callout-tip callout callout-style-simple callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+market regime
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Financial markets have the tendency to change their behavior over time, which can create regimes, or periods of fairly persistent market conditions. Investors often look to discern the current market regime, looking out for any changes to it and how those might affect the individual components of their portfolio’s asset allocation. Modeling various market regimes can be an effective tool, as it can enable macroeconomically aware investment decision-making and better management of tail risks.</p>
+</div>
+</div>
 <p>With K-means we are trying to establish groups of data that are <strong>homegenous</strong> and <strong>distinctly different</strong> from other groups. The <em>K-</em> stands for the number of clusters we will create.</p>
 <p>The concept of distance comes in when deciding if a data point belongs to a cluster. The most common way to measure distance is the <strong>Euclidean Distance</strong>.</p>
 <p>With multivariate data set, it is important to normalize the data.<br>
@@ -418,12 +453,12 @@ $ adj_close &lt;dbl&gt; 0.1907656, 0.1892397, 0.1938177, 0.1930547, 0.1861870, 0
 1     1 &lt;kmeans&gt; 32127.       32127.  2.36e-10     1 &lt;tibble [10,713 × 6]&gt;
 2     2 &lt;kmeans&gt; 32127.       19719.  1.24e+ 4     1 &lt;tibble [10,713 × 6]&gt;
 3     3 &lt;kmeans&gt; 32127.       15887.  1.62e+ 4     5 &lt;tibble [10,713 × 6]&gt;
-4     4 &lt;kmeans&gt; 32127.       13538.  1.86e+ 4     5 &lt;tibble [10,713 × 6]&gt;
-5     5 &lt;kmeans&gt; 32127.       12038.  2.01e+ 4     5 &lt;tibble [10,713 × 6]&gt;
-6     6 &lt;kmeans&gt; 32127.        9723.  2.24e+ 4     5 &lt;tibble [10,713 × 6]&gt;
-7     7 &lt;kmeans&gt; 32127.        8506.  2.36e+ 4     5 &lt;tibble [10,713 × 6]&gt;
-8     8 &lt;kmeans&gt; 32127.        7973.  2.42e+ 4     4 &lt;tibble [10,713 × 6]&gt;
-9     9 &lt;kmeans&gt; 32127.        7244.  2.49e+ 4     6 &lt;tibble [10,713 × 6]&gt;</code></pre>
+4     4 &lt;kmeans&gt; 32127.       13538.  1.86e+ 4     4 &lt;tibble [10,713 × 6]&gt;
+5     5 &lt;kmeans&gt; 32127.       11165.  2.10e+ 4     5 &lt;tibble [10,713 × 6]&gt;
+6     6 &lt;kmeans&gt; 32127.        9921.  2.22e+ 4     4 &lt;tibble [10,713 × 6]&gt;
+7     7 &lt;kmeans&gt; 32127.        8508.  2.36e+ 4     5 &lt;tibble [10,713 × 6]&gt;
+8     8 &lt;kmeans&gt; 32127.        7978.  2.41e+ 4     6 &lt;tibble [10,713 × 6]&gt;
+9     9 &lt;kmeans&gt; 32127.        7250.  2.49e+ 4     6 &lt;tibble [10,713 × 6]&gt;</code></pre>
 </div>
 </div>
 <p>There are several ways to choose the ideal number of clusters. One of them is the elbow method, another one is the Silhouette Method.</p>

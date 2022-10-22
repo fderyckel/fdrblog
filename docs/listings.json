@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/markov_chains/index.html",
       "/posts/kmeans/index.html",
       "/posts/xgboost_time_series/index.html",
       "/posts/gini_coefficient/index.html",

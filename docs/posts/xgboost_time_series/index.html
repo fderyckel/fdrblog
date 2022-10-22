@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -164,7 +164,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Translating Python Part 1 - Xgboost with Time-Series</h1>
@@ -199,8 +199,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#loading-data-and-features-engineering" id="toc-loading-data-and-features-engineering" class="nav-link active" data-scroll-target="#loading-data-and-features-engineering">Loading data and features engineering</a>
+  <ul class="collapse">
+  <li><a href="#using-r" id="toc-using-r" class="nav-link" data-scroll-target="#using-r">Using R</a></li>
+  <li><a href="#using-python" id="toc-using-python" class="nav-link" data-scroll-target="#using-python">Using python</a></li>
+  </ul></li>
+  <li><a href="#spliting-the-data-into-a-training-and-testing-set" id="toc-spliting-the-data-into-a-training-and-testing-set" class="nav-link" data-scroll-target="#spliting-the-data-into-a-training-and-testing-set">Spliting the data into a training and testing set</a>
+  <ul class="collapse">
+  <li><a href="#using-r-1" id="toc-using-r-1" class="nav-link" data-scroll-target="#using-r-1">Using R</a></li>
+  <li><a href="#using-python-1" id="toc-using-python-1" class="nav-link" data-scroll-target="#using-python-1">Using Python</a></li>
+  </ul></li>
+  <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">Modeling</a>
+  <ul class="collapse">
+  <li><a href="#using-r-2" id="toc-using-r-2" class="nav-link" data-scroll-target="#using-r-2">Using R</a></li>
+  <li><a href="#using-python-2" id="toc-using-python-2" class="nav-link" data-scroll-target="#using-python-2">Using Python</a></li>
+  </ul></li>
+  <li><a href="#features-importance" id="toc-features-importance" class="nav-link" data-scroll-target="#features-importance">Features importance</a>
+  <ul class="collapse">
+  <li><a href="#using-r-3" id="toc-using-r-3" class="nav-link" data-scroll-target="#using-r-3">Using R</a></li>
+  <li><a href="#using-python-3" id="toc-using-python-3" class="nav-link" data-scroll-target="#using-python-3">Using python</a></li>
+  </ul></li>
+  <li><a href="#checking-predictions-and-evaluating-models" id="toc-checking-predictions-and-evaluating-models" class="nav-link" data-scroll-target="#checking-predictions-and-evaluating-models">Checking predictions and evaluating models</a>
+  <ul class="collapse">
+  <li><a href="#using-r-4" id="toc-using-r-4" class="nav-link" data-scroll-target="#using-r-4">Using R</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 

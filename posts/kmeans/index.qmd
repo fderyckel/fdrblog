@@ -6,7 +6,15 @@ categories: [kmeans, code, analysis, tidymodel]
 editor: source
 ---
 
-This post is about how to use Kmeans to classify various market regimes or to use kmeans to classifiy financial observations. 
+This post is about how to use Kmeans to classify various market regimes or to use Kmeans to classify financial observations. 
+
+::: {.callout-tip appearance="simple"} 
+
+# Market regime 
+
+Financial markets have the tendency to change their behavior over time, which can create regimes, or periods of fairly persistent market conditions. Investors often look to discern the current market regime, looking out for any changes to it and how those might affect the individual components of their portfolio’s asset allocation. Modeling various market regimes can be an effective tool, as it can enable macroeconomically aware investment decision-making and better management of tail risks. 
+
+:::
 
 With K-means we are trying to establish groups of data that are **homegenous** and **distinctly different** from other groups.  The *K-* stands for the number of clusters we will create.  
 
@@ -80,7 +88,7 @@ library(broom)     #use the glance function on kmeans
 df1sc <- df1 %>% select(-date, -adj_close)
 
 kclusts <- tibble(k = 1:9) |> 
-  mutate(kclust = map(k, ~kmeans(df1sc, centers = .x, iter.max = 50L)), 
+  mutate(kclust = map(k, ~kmeans(df1sc, centers = .x, nstart = 30, iter.max = 50L)), 
          glanced = map(kclust, glance), 
          augmented = map(kclust, augment, df1))
 
